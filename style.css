@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141519;
+  color: hsl(0, 0%, 100%);
+}
+.hidden {
+  display: none !important;
+}
+.container {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid blue; */
+  background: linear-gradient(#242a3471, #171e28);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  gap: 2.2rem;
+}
+
+.star-image {
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #262f38;
+}
+.container > p {
+  /* margin-top: 1.5rem; */
+  color: hsl(216, 12%, 54%);
+  line-height: 1.6;
+}
+.ratings {
+  display: flex;
+  gap: 1.5rem;
+  /* margin: 1.8rem 0; */
+}
+.rating {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #262f36;
+  padding: 1rem;
+  border-radius: 50%;
+  color: hsl(216, 12%, 54%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.rating:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.btn {
+  padding: 0.8rem;
+  background-color: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+/* .thank-you-container {
+  display: none;
+} */
+/* .rating-value {
+  padding: 0 0.2rem;
+} */
+.rating-content {
+  width: max-content;
+  padding: 0.2rem 0.8rem;
+  background-color: #262f38;
+  color: hsl(25, 97%, 53%) !important;
+  border-radius: 1rem;
+  margin: auto;
+}
+.feedback {
+  margin-top: -1.5rem !important;
+}
+.align-center {
+  text-align: center;
+}
+.selected {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.selected:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 16rem;
+  }
+}
